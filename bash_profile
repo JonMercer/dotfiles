@@ -31,3 +31,14 @@ export HISTSIZE=50000
 shopt -s histappend
 PROMPT_COMMAND='history -a'
 source /usr/local/Cellar/grc/1.9/etc/grc.bashrc
+
+
+function loopThroughText {
+  
+while read name
+do
+    echo "$name"
+    printf "$name"
+    printf "This"
+done < ~/Desktop/foo.txt
+}

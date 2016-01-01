@@ -1,3 +1,19 @@
+function savemd {
+	pbpaste | tee /Users/Odin/Dropbox/Docs/SearchMe/$1.md
+	sleep 1
+	vi /Users/Odin/Dropbox/Docs/SearchMe/$1.md
+}
+
+function sgrep {
+	grep -ri $1 . --color
+}
+
+function irun {
+	webpack
+	#sleep 6s
+	cordova run ios --device --target=iPhone-5
+}
+
 function clip {
 	echo >> ~/clips.txt ""
 	echo >> ~/clips.txt "###"

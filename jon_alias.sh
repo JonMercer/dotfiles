@@ -1,6 +1,8 @@
 alias mq="mvn -T3 clean install -Dpmd.skip -Dcheckstyle.skip -DskipAllTests -pl cortex-dce/cortex-dce-studio-webapp -am -Dmaven.test.skip=true"
 alias mvnci="mvn clean install"
-alias gl="git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s""
+alias gl2="git log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s""
+alias gl='git log --graph --abbrev-commit --decorate --format=format:"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)" --all'
+alias gl1='git log --graph --abbrev-commit --decorate --format=format:"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n""          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)" --all'
 alias mci="mvn clean install -T3 -e"
 alias mcis="mvn clean install -DskipAllTests"
 alias src="source ~/.bash_profile"
